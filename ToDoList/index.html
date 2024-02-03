@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>ToDoList</title>
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="todo__container">
+			<h1 class="todo__title">Todo List</h1>
+			<div class="row">
+				<input class="row__input border" id="inputTask" type="text" placeholder="Новая задача">
+				<div class="status__menu">
+					<div class="statis__option" data-status="1">
+						<span class="status__text">Статус</span>
+						<i class="gg-arrow-down"></i>
+					</div>
+
+					<ul class="options">
+						<li class="option">
+							<span class="option__text">Высокий</span>
+						</li>
+						<li class="option">
+							<span class="option__text">Средний</span>
+						</li>
+						<li class="option">
+							<span class="option__text">Низкий</span>
+						</li>
+					</ul>
+				</div>
+
+					<button class="row__btn border" id="add__button">Добавить задачу</button>
+			</div>
+			<div class="row__error"></div>
+
+			<!-- Todo__container -->
+			
+			<ul id="list__box">
+
+				<!-- <li class="list__item">
+					<span class="list__task" id="toggleTask">
+						Lorem ipsum dolor sit amet.
+					</span>
+					<span class="list__task" id="toggleTask">
+						Lorem ipsum
+					</span>
+					<span class="list__button">
+						<button class="edit border" >
+							<img src="images/icon-edit.png" class="edit__task" alt="">
+						</button>
+						<button class="delete border">
+							<img src="images/icon-delete.png" class="delete__task" alt="">
+						</button>
+					</span>
+
+				</li> -->
+
+			</ul>
+
+			<!-- <div class="modal__edit-task">
+				<div class="modal__edit">
+					<input class="row__input border"  type="text">
+	
+					<div class="edit__menu">
+						<div class="edit__option" data-status="2">
+							<span class="edit__text">Статус</span>
+							<i class="gg-arr ow-down"></i>
+						</div>
+	
+						<ul class="options">
+							<li class="edit-option">
+								<span class="edit-option__text">Высокий</span>
+							</li>
+							<li class="edit-option">
+								<span class="edit-option__text">Средний</span>
+							</li>
+							<li class="edit-option">
+								<span class="edit-option__text">Низкий</span>
+							</li>
+						</ul>
+					</div>
+	
+					<button class="row__btn border">Изменить</button>
+				</div>
+			</div> -->
+			<div class="modal" id="my__modal">
+				<div class="modal__box">
+					<h2 class="edit__title">Редактор задачи</h2>
+						<input class="row__input border" id="inputEdit" type="text">
+					
+					<h2 class="edit__title">Статус задачи</h2>
+					<div class="edit__menu">
+						<div class="edit__option" data-status="2">
+							<span class="edit__text">Статус</span>
+							<i class="gg-arr ow-down"></i>
+						</div>
+	
+						<ul class="options">
+							<li class="edit-option">
+								<span class="edit-option__text">Высокий</span>
+							</li>
+							<li class="edit-option">
+								<span class="edit-option__text">Средний</span>
+							</li>
+							<li class="edit-option">
+								<span class="edit-option__text">Низкий</span>
+							</li>
+						</ul>
+					</div>
+					
+					<button class="row__btn border" id="buttonEdit">Изменить</button>
+				</div>
+		
+				
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<script src="script/script.js"></script>
+	<script src="script/editTask.js"></script>
+
+
+	
+</body>
+</html>
